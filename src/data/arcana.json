@@ -1,0 +1,178 @@
+[
+  {
+    "id": 0,
+    "name": "The Fool",
+    "roman": "0",
+    "macro_mapping": "Risk-on / New cycle begins",
+    "keywords": ["speculation", "momentum", "breakout"],
+    "image_prompt": "A young trader leaping off a cliff of price charts, a bindle of rolled commodity contracts over one shoulder, dawn sky behind them, colorful hot air balloons rising"
+  },
+  {
+    "id": 1,
+    "name": "The Magician",
+    "roman": "I",
+    "macro_mapping": "Central bank omnipotence / Liquidity conjured",
+    "keywords": ["intervention", "liquidity", "stimulus"],
+    "image_prompt": "A central banker in robes holding a wand above an altar spread with oil barrels, gold bars, wheat sheaves, and copper coils, currency symbols orbiting overhead"
+  },
+  {
+    "id": 2,
+    "name": "The High Priestess",
+    "roman": "II",
+    "macro_mapping": "Hidden information / Price discovery pending",
+    "keywords": ["opacity", "dark pools", "insider flow"],
+    "image_prompt": "A veiled figure seated between two columns—one marked BULL, one BEAR—holding a scroll of undisclosed inventory data, moonlit commodities exchange behind her"
+  },
+  {
+    "id": 3,
+    "name": "The Empress",
+    "roman": "III",
+    "macro_mapping": "Inflation / Commodity supercycle",
+    "keywords": ["inflation", "abundance", "supercycle"],
+    "image_prompt": "A fertile goddess enthroned amid overflowing grain silos, oil derricks blooming like flowers, and a rising price ticker vine, golden harvest light everywhere"
+  },
+  {
+    "id": 4,
+    "name": "The Emperor",
+    "roman": "IV",
+    "macro_mapping": "Rate hikes / Monetary tightening",
+    "keywords": ["tightening", "rate hike", "Fed hawkishness"],
+    "image_prompt": "An iron-fisted emperor on a throne of stacked interest rate announcements, holding a scepter shaped like a rate hike chart, cold stone fortress backdrop"
+  },
+  {
+    "id": 5,
+    "name": "The Hierophant",
+    "roman": "V",
+    "macro_mapping": "OPEC+ discipline / Cartel orthodoxy",
+    "keywords": ["cartel", "quota", "production cut"],
+    "image_prompt": "A robed high priest presiding over an OPEC assembly table, blessing barrels of crude oil, ministers bowing in ornate Middle Eastern hall"
+  },
+  {
+    "id": 6,
+    "name": "The Lovers",
+    "roman": "VI",
+    "macro_mapping": "Trade agreement / Correlated markets",
+    "keywords": ["correlation", "trade deal", "convergence"],
+    "image_prompt": "Two commodity traders shaking hands beneath a glowing angel made of price-correlation matrices, gold and oil charts mirroring each other in background"
+  },
+  {
+    "id": 7,
+    "name": "The Chariot",
+    "roman": "VII",
+    "macro_mapping": "Trend in motion / Momentum trade",
+    "keywords": ["trend", "momentum", "breakout confirmed"],
+    "image_prompt": "A triumphant trader riding a chariot pulled by a black bear and white bull in harness, speeding along an upward-sloping chart axis highway"
+  },
+  {
+    "id": 8,
+    "name": "Strength",
+    "roman": "VIII",
+    "macro_mapping": "Long-term structural demand / Patient capital",
+    "keywords": ["structural demand", "conviction", "long-term hold"],
+    "image_prompt": "A calm figure gently holding open the jaws of a lion made of crude oil futures contracts, strength through composure, long horizon sunrise behind"
+  },
+  {
+    "id": 9,
+    "name": "The Hermit",
+    "roman": "IX",
+    "macro_mapping": "Deflation / Low-volatility contraction",
+    "keywords": ["deflation", "contraction", "deleveraging"],
+    "image_prompt": "A solitary figure at the peak of a mountain of deleveraged positions, lantern glowing dimly, price charts descending into mist below"
+  },
+  {
+    "id": 10,
+    "name": "Wheel of Fortune",
+    "roman": "X",
+    "macro_mapping": "Supply shock / Cycle turn",
+    "keywords": ["supply shock", "cycle turn", "mean reversion"],
+    "image_prompt": "A great wheel of commodity charts spinning—oil, gold, corn, copper—creatures riding up and down its rim as markets rotate, fates written in candlesticks"
+  },
+  {
+    "id": 11,
+    "name": "Justice",
+    "roman": "XI",
+    "macro_mapping": "Regulatory rebalancing / Market correction",
+    "keywords": ["regulation", "rebalancing", "correction"],
+    "image_prompt": "A blindfolded figure holding scales perfectly balanced with an oil barrel on one side and a gold bar on the other, courthouse of commodity regulators behind"
+  },
+  {
+    "id": 12,
+    "name": "The Hanged Man",
+    "roman": "XII",
+    "macro_mapping": "Recession / Demand destruction",
+    "keywords": ["recession", "demand destruction", "waiting"],
+    "image_prompt": "A trader hanging upside down from a derrick scaffold, markets paused, oil barrels and grain sacks suspended mid-fall around them, eerie calm"
+  },
+  {
+    "id": 13,
+    "name": "Death",
+    "roman": "XIII",
+    "macro_mapping": "Regime change / End of cycle",
+    "keywords": ["regime change", "transition", "end of cycle"],
+    "image_prompt": "A skeleton knight riding through a commodities trading floor at close of day, old regime charts crumbling, new green-energy sprouts emerging from ashes"
+  },
+  {
+    "id": 14,
+    "name": "Temperance",
+    "roman": "XIV",
+    "macro_mapping": "Soft landing / Managed slowdown",
+    "keywords": ["soft landing", "balance", "moderation"],
+    "image_prompt": "An angelic figure pouring liquidity between two beakers—one labeled growth, one labeled inflation—standing on a riverbank of steady economic flow"
+  },
+  {
+    "id": 15,
+    "name": "The Devil",
+    "roman": "XV",
+    "macro_mapping": "Leverage / Commodity addiction",
+    "keywords": ["leverage", "dependency", "overcapacity"],
+    "image_prompt": "A horned figure enthroned above two traders chained to desks piled with leveraged futures positions, oil and metal chains binding them, flickering trading screens"
+  },
+  {
+    "id": 16,
+    "name": "The Tower",
+    "roman": "XVI",
+    "macro_mapping": "Volatility spike / Black swan",
+    "keywords": ["volatility", "black swan", "liquidation"],
+    "image_prompt": "A tower of stacked commodity exchange servers struck by lightning, traders leaping from windows as charts go vertical, chaos and price discovery in freefall"
+  },
+  {
+    "id": 17,
+    "name": "The Star",
+    "roman": "XVII",
+    "macro_mapping": "Recovery / Liquidity returns",
+    "keywords": ["recovery", "liquidity", "green shoots"],
+    "image_prompt": "A figure kneeling at a river of quantitative easing, pouring water onto barren commodity fields as stars—each a different market ticker—light up the night sky"
+  },
+  {
+    "id": 18,
+    "name": "The Moon",
+    "roman": "XVIII",
+    "macro_mapping": "Uncertainty / Sentiment-driven market",
+    "keywords": ["uncertainty", "sentiment", "false signals"],
+    "image_prompt": "A full moon reflected on an oil slick sea, two wolves howling at diverging price paths, a crayfish emerging from speculative froth below"
+  },
+  {
+    "id": 19,
+    "name": "The Sun",
+    "roman": "XIX",
+    "macro_mapping": "Global growth / Bull market",
+    "keywords": ["growth", "bull market", "risk appetite"],
+    "image_prompt": "A radiant sun with a smiling face shining over thriving commodity fields—golden wheat, gushing oil wells, gleaming copper mines—a child riding a white horse"
+  },
+  {
+    "id": 20,
+    "name": "Judgement",
+    "roman": "XX",
+    "macro_mapping": "Policy pivot / Fed reversal",
+    "keywords": ["pivot", "reversal", "Fed easing"],
+    "image_prompt": "An angel blowing a trumpet above traders rising from their desks, Jerome Powell descending from clouds with a rate-cut announcement, markets awakening below"
+  },
+  {
+    "id": 21,
+    "name": "The World",
+    "roman": "XXI",
+    "macro_mapping": "Full cycle completion / Peak prosperity",
+    "keywords": ["cycle complete", "peak", "global integration"],
+    "image_prompt": "A dancer at the center of a laurel wreath encircling the globe, all commodity markets in harmony—oil, gold, grain, copper—prices balanced at perfect equilibrium"
+  }
+]
