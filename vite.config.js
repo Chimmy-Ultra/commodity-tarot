@@ -4,4 +4,18 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  server: {
+    proxy: {
+      '/api/anthropic': {
+        target: 'https://api.anthropic.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/anthropic/, ''),
+      },
+      '/api/alphavantage': {
+        target: 'https://www.alphavantage.co',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/alphavantage/, ''),
+      },
+    },
+  },
 })

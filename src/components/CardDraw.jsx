@@ -1,5 +1,8 @@
 import { useState, useCallback } from 'react'
 import arcana from '../data/arcana.json'
+import { CARD_IMAGES } from '../data/cardImages'
+import { getReading } from '../lib/reading'
+import { fetchSnapshot } from '../lib/market'
 
 const POSITIONS = ['Past', 'Present', 'Future']
 
@@ -45,34 +48,70 @@ function CardBack() {
   )
 }
 
+
+const SUIT_COLORS = {
+  Wands:     { border: '#c0530a', fill: '#3d1a08', accent: '#e8621a', symbol: '⚡' },
+  Pentacles: { border: '#b8860b', fill: '#2c1a06', accent: '#d4af37', symbol: '◎' },
+  Cups:      { border: '#1a7a4a', fill: '#0a2a1a', accent: '#2aaa6a', symbol: '♡' },
+  Swords:    { border: '#3a5a9a', fill: '#0e1e3a', accent: '#5a8acc', symbol: '✦' },
+}
+
 function CardFace({ card }) {
+  const imgSrc = CARD_IMAGES[card.id]
+  const suitStyle = card.suit ? SUIT_COLORS[card.suit] : null
+
+  if (imgSrc) {
+    return (
+      <div className="w-full h-full relative rounded-lg overflow-hidden"
+        style={{ border: `2px solid ${suitStyle ? suitStyle.border : '#b8860b'}`, background: '#fdf8e8' }}>
+        <img src={imgSrc} alt={card.name} className="w-full h-full object-cover" />
+        <div className="absolute bottom-0 left-0 right-0 px-1 py-1 text-center"
+          style={{ background: 'rgba(253,248,232,0.88)', borderTop: `1px solid ${suitStyle ? suitStyle.border : '#b8860b'}` }}>
+          <div style={{ fontFamily: 'Cinzel, serif', fontSize: '7px', fontWeight: 700, color: '#2c1a0e', lineHeight: 1.2 }}>
+            {card.suit
+              ? `${card.suit.toUpperCase()} · ${card.name.toUpperCase()}`
+              : `${card.roman} · ${card.name.toUpperCase()}`}
+          </div>
+          <div style={{ fontFamily: 'Crimson Text, serif', fontSize: '6px', color: '#5a3a1a', fontStyle: 'italic', lineHeight: 1.2 }}>
+            {card.macro_mapping}
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // Suit-aware SVG fallback
+  const sc = suitStyle || { border: '#b8860b', fill: '#e8dfc0', accent: '#d4af37', symbol: '✦' }
+  const topLabel = card.suit ? card.rank : card.roman
+  const bgFill = card.suit ? sc.fill : '#fdf8e8'
+  const textFill = card.suit ? '#e8dfc0' : '#2c1a0e'
+  const subTextFill = card.suit ? sc.accent : '#8b0000'
+
   return (
     <svg viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-      <rect width="120" height="200" rx="8" fill="#fdf8e8" />
-      <rect x="4" y="4" width="112" height="192" rx="6" fill="none" stroke="#b8860b" strokeWidth="2" />
-      <rect x="8" y="8" width="104" height="184" rx="4" fill="none" stroke="#d4af37" strokeWidth="0.8" opacity="0.5" />
-      {/* Roman numeral */}
-      <text x="60" y="24" textAnchor="middle" fontFamily="serif" fontSize="10" fill="#8b0000" fontWeight="bold">
-        {card.roman}
+      <rect width="120" height="200" rx="8" fill={bgFill} />
+      <rect x="4" y="4" width="112" height="192" rx="6" fill="none" stroke={sc.border} strokeWidth="2" />
+      <rect x="8" y="8" width="104" height="184" rx="4" fill="none" stroke={sc.accent} strokeWidth="0.8" opacity="0.5" />
+      <text x="60" y="22" textAnchor="middle" fontFamily="serif" fontSize="9" fill={subTextFill} fontWeight="bold">
+        {topLabel}
       </text>
-      {/* Card name */}
-      <text x="60" y="40" textAnchor="middle" fontFamily="serif" fontSize="8" fill="#2c1a0e" fontWeight="bold">
+      <text x="60" y="38" textAnchor="middle" fontFamily="serif" fontSize="7" fill={textFill} fontWeight="bold">
         {card.name.toUpperCase()}
       </text>
-      {/* Divider */}
-      <line x1="15" y1="44" x2="105" y2="44" stroke="#b8860b" strokeWidth="0.5" />
-      {/* Placeholder art area */}
-      <rect x="15" y="50" width="90" height="90" rx="4" fill="#e8dfc0" stroke="#b8860b" strokeWidth="0.8" />
-      {/* Simple symbolic art based on card id */}
-      <text x="60" y="102" textAnchor="middle" fontSize="32" fontFamily="serif" fill="#4a3728" opacity="0.6">
-        {getCardSymbol(card.id)}
+      <line x1="15" y1="43" x2="105" y2="43" stroke={sc.border} strokeWidth="0.5" />
+      <rect x="15" y="49" width="90" height="90" rx="4" fill={card.suit ? 'rgba(255,255,255,0.05)' : '#e8dfc0'} stroke={sc.border} strokeWidth="0.8" />
+      <text x="60" y="101" textAnchor="middle" fontSize="34" fontFamily="serif" fill={sc.accent} opacity="0.8">
+        {sc.symbol}
       </text>
-      {/* Divider */}
-      <line x1="15" y1="146" x2="105" y2="146" stroke="#b8860b" strokeWidth="0.5" />
-      {/* Macro mapping */}
-      <foreignObject x="10" y="150" width="100" height="45">
+      {card.sector && (
+        <text x="60" y="130" textAnchor="middle" fontFamily="serif" fontSize="7" fill={sc.accent} opacity="0.7">
+          {card.sector.toUpperCase()}
+        </text>
+      )}
+      <line x1="15" y1="145" x2="105" y2="145" stroke={sc.border} strokeWidth="0.5" />
+      <foreignObject x="10" y="149" width="100" height="46">
         <div xmlns="http://www.w3.org/1999/xhtml"
-          style={{ fontFamily: 'serif', fontSize: '6px', color: '#2c1a0e', textAlign: 'center', lineHeight: '1.4' }}>
+          style={{ fontFamily: 'serif', fontSize: '6px', color: textFill, textAlign: 'center', lineHeight: '1.4' }}>
           {card.macro_mapping}
         </div>
       </foreignObject>
@@ -80,15 +119,10 @@ function CardFace({ card }) {
   )
 }
 
-function getCardSymbol(id) {
-  const symbols = ['☀', '✦', '☽', '♦', '♛', '☩', '♡', '⚡', '♾', '⚔', '☸', '⚖', '✠', '☠', '⚗', '♟', '⚡', '✦', '☾', '☀', '⚓', '🌍']
-  return symbols[id] || '✦'
-}
-
 function TarotCard({ card, position, flipped, onFlip }) {
   return (
     <div className="flex flex-col items-center gap-3">
-      <span className="text-amber-400 text-sm font-semibold tracking-widest uppercase"
+      <span className="text-amber-700 text-sm font-semibold tracking-widest uppercase"
         style={{ fontFamily: 'Cinzel, serif' }}>
         {position}
       </span>
@@ -130,7 +164,7 @@ function TarotCard({ card, position, flipped, onFlip }) {
         <div className="flex flex-wrap justify-center gap-1 max-w-[140px]">
           {card.keywords.map(kw => (
             <span key={kw}
-              className="text-xs px-2 py-0.5 rounded-full border border-amber-700 text-amber-300 bg-amber-950/40"
+              className="text-xs px-2 py-0.5 rounded-full border border-amber-600 text-amber-800 bg-amber-100"
               style={{ fontFamily: 'Crimson Text, serif', fontStyle: 'italic' }}>
               {kw}
             </span>
@@ -145,12 +179,20 @@ export default function CardDraw() {
   const [drawn, setDrawn] = useState(null)      // array of 3 cards
   const [flipped, setFlipped] = useState([false, false, false])
   const [phase, setPhase] = useState('idle')    // idle | spread | reading
+  const [narrative, setNarrative] = useState(null)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
+
+  const allFlipped = phase === 'spread' && flipped.every(Boolean)
 
   const drawSpread = useCallback(() => {
     const three = shuffle(arcana).slice(0, 3)
     setDrawn(three)
     setFlipped([false, false, false])
     setPhase('spread')
+    setNarrative(null)
+    setLoading(false)
+    setError(null)
   }, [])
 
   const flipCard = useCallback((i) => {
@@ -162,26 +204,46 @@ export default function CardDraw() {
     })
   }, [drawn])
 
+  const requestReading = useCallback(async () => {
+    if (!drawn) return
+    setLoading(true)
+    setError(null)
+    try {
+      const snapshot = await fetchSnapshot(drawn)
+      const { narrative: text } = await getReading(drawn, snapshot)
+      setNarrative(text)
+    } catch (e) {
+      setError(e.message)
+    } finally {
+      setLoading(false)
+    }
+  }, [drawn])
+
   return (
     <div className="flex flex-col items-center gap-8 py-12 px-4">
       <div className="text-center">
         <h1
-          className="text-4xl md:text-5xl font-bold text-amber-400 mb-2"
+          className="text-4xl md:text-5xl font-bold text-amber-700 mb-2"
           style={{ fontFamily: 'Cinzel, serif', letterSpacing: '0.05em' }}
         >
           Commodity Tarot
         </h1>
-        <p className="text-slate-400 text-lg" style={{ fontFamily: 'Crimson Text, serif' }}>
+        <p className="text-stone-500 text-lg" style={{ fontFamily: 'Crimson Text, serif' }}>
           Read the macro through the cards
         </p>
+        <a href="#/daily"
+          className="inline-block mt-2 text-xs tracking-widest uppercase text-amber-600 hover:text-amber-800 transition-colors duration-150"
+          style={{ fontFamily: 'Cinzel, serif' }}>
+          ✦ Daily Card ✦
+        </a>
       </div>
 
       {/* Spread area */}
       {phase === 'idle' ? (
-        <div className="flex gap-6 opacity-30">
+        <div className="flex gap-6 opacity-50">
           {POSITIONS.map(pos => (
             <div key={pos} className="flex flex-col items-center gap-3">
-              <span className="text-amber-400 text-sm tracking-widest uppercase"
+              <span className="text-amber-700 text-sm tracking-widest uppercase"
                 style={{ fontFamily: 'Cinzel, serif' }}>{pos}</span>
               <div style={{ width: '120px', height: '200px' }}><CardBack /></div>
             </div>
@@ -201,19 +263,82 @@ export default function CardDraw() {
         </div>
       )}
 
-      {/* Draw button */}
-      <button
-        onClick={drawSpread}
-        className="px-8 py-3 rounded-full border-2 border-amber-600 text-amber-300 hover:bg-amber-900/30 hover:text-amber-200 active:scale-95 transition-all duration-200 text-lg tracking-wider"
-        style={{ fontFamily: 'Cinzel, serif' }}
-      >
-        {phase === 'idle' ? 'Draw a Spread' : 'Draw Again'}
-      </button>
+      {/* Action buttons */}
+      <div className="flex flex-wrap gap-4 justify-center">
+        <button
+          onClick={drawSpread}
+          className="px-8 py-3 rounded-full border-2 border-amber-700 text-amber-800 hover:bg-amber-100 hover:text-amber-900 active:scale-95 transition-all duration-200 text-lg tracking-wider"
+          style={{ fontFamily: 'Cinzel, serif' }}
+        >
+          {phase === 'idle' ? 'Draw a Spread' : 'Draw Again'}
+        </button>
 
-      {phase === 'spread' && (
-        <p className="text-slate-500 text-sm" style={{ fontFamily: 'Crimson Text, serif' }}>
+        {allFlipped && !narrative && !loading && (
+          <button
+            onClick={requestReading}
+            className="px-8 py-3 rounded-full border-2 border-amber-600 text-amber-700 hover:bg-amber-100 hover:text-amber-900 active:scale-95 transition-all duration-200 text-lg tracking-wider"
+            style={{ fontFamily: 'Cinzel, serif' }}
+          >
+            Get Reading
+          </button>
+        )}
+
+        {allFlipped && (
+          <button
+            onClick={() => {
+              const text = [
+                'Commodity Tarot \u{1F0CF}',
+                '',
+                ...drawn.map((c, i) => `${POSITIONS[i]}: ${c.name} \u2014 ${c.macro_mapping}`),
+                '',
+                '#CommodityTarot #Macro',
+              ].join('\n')
+              window.open(
+                `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`,
+                '_blank',
+                'width=550,height=420'
+              )
+            }}
+            className="px-6 py-3 rounded-full border-2 border-stone-400 text-stone-600 hover:bg-stone-100 hover:text-stone-800 active:scale-95 transition-all duration-200 text-lg tracking-wider"
+            style={{ fontFamily: 'Cinzel, serif' }}
+          >
+            Share on 𝕏
+          </button>
+        )}
+      </div>
+
+      {phase === 'spread' && !allFlipped && (
+        <p className="text-stone-500 text-sm" style={{ fontFamily: 'Crimson Text, serif' }}>
           Click each card to reveal its meaning
         </p>
+      )}
+
+      {/* Loading state */}
+      {loading && (
+        <div className="text-amber-700 text-lg animate-pulse" style={{ fontFamily: 'Crimson Text, serif' }}>
+          Consulting the markets...
+        </div>
+      )}
+
+      {/* Error state */}
+      {error && (
+        <div className="max-w-xl text-center text-red-600 text-sm" style={{ fontFamily: 'Crimson Text, serif' }}>
+          {error}
+        </div>
+      )}
+
+      {/* Narrative reading */}
+      {narrative && (
+        <div className="max-w-2xl mx-4 p-6 rounded-xl border border-amber-400 bg-amber-50"
+          style={{ fontFamily: 'Crimson Text, serif' }}>
+          <h2 className="text-amber-700 text-lg font-semibold mb-4 text-center tracking-wider"
+            style={{ fontFamily: 'Cinzel, serif' }}>
+            The Reading
+          </h2>
+          <div className="text-stone-700 text-base leading-relaxed whitespace-pre-line">
+            {narrative}
+          </div>
+        </div>
       )}
     </div>
   )

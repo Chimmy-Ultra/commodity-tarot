@@ -4,175 +4,1203 @@
     "name": "The Fool",
     "roman": "0",
     "macro_mapping": "Risk-on / New cycle begins",
-    "keywords": ["speculation", "momentum", "breakout"],
-    "image_prompt": "A young trader leaping off a cliff of price charts, a bindle of rolled commodity contracts over one shoulder, dawn sky behind them, colorful hot air balloons rising"
+    "keywords": [
+      "speculation",
+      "momentum",
+      "breakout"
+    ],
+    "image_prompt": "A young trader leaping off a cliff of price charts, a bindle of rolled commodity contracts over one shoulder, dawn sky behind them, colorful hot air balloons rising",
+    "name_zh": "愚者",
+    "macro_mapping_zh": "風險偏好開啟 / 新週期啟動"
   },
   {
     "id": 1,
     "name": "The Magician",
     "roman": "I",
     "macro_mapping": "Central bank omnipotence / Liquidity conjured",
-    "keywords": ["intervention", "liquidity", "stimulus"],
-    "image_prompt": "A central banker in robes holding a wand above an altar spread with oil barrels, gold bars, wheat sheaves, and copper coils, currency symbols orbiting overhead"
+    "keywords": [
+      "intervention",
+      "liquidity",
+      "stimulus"
+    ],
+    "image_prompt": "A central banker in robes holding a wand above an altar spread with oil barrels, gold bars, wheat sheaves, and copper coils, currency symbols orbiting overhead",
+    "name_zh": "魔術師",
+    "macro_mapping_zh": "央行全能 / 流動性憑空造就"
   },
   {
     "id": 2,
     "name": "The High Priestess",
     "roman": "II",
     "macro_mapping": "Hidden information / Price discovery pending",
-    "keywords": ["opacity", "dark pools", "insider flow"],
-    "image_prompt": "A veiled figure seated between two columns—one marked BULL, one BEAR—holding a scroll of undisclosed inventory data, moonlit commodities exchange behind her"
+    "keywords": [
+      "opacity",
+      "dark pools",
+      "insider flow"
+    ],
+    "image_prompt": "A veiled figure seated between two columns—one marked BULL, one BEAR—holding a scroll of undisclosed inventory data, moonlit commodities exchange behind her",
+    "name_zh": "女祭司",
+    "macro_mapping_zh": "隱藏資訊 / 價格發現待定"
   },
   {
     "id": 3,
     "name": "The Empress",
     "roman": "III",
     "macro_mapping": "Inflation / Commodity supercycle",
-    "keywords": ["inflation", "abundance", "supercycle"],
-    "image_prompt": "A fertile goddess enthroned amid overflowing grain silos, oil derricks blooming like flowers, and a rising price ticker vine, golden harvest light everywhere"
+    "keywords": [
+      "inflation",
+      "abundance",
+      "supercycle"
+    ],
+    "image_prompt": "A fertile goddess enthroned amid overflowing grain silos, oil derricks blooming like flowers, and a rising price ticker vine, golden harvest light everywhere",
+    "name_zh": "女皇",
+    "macro_mapping_zh": "通貨膨脹 / 大宗商品超級週期"
   },
   {
     "id": 4,
     "name": "The Emperor",
     "roman": "IV",
     "macro_mapping": "Rate hikes / Monetary tightening",
-    "keywords": ["tightening", "rate hike", "Fed hawkishness"],
-    "image_prompt": "An iron-fisted emperor on a throne of stacked interest rate announcements, holding a scepter shaped like a rate hike chart, cold stone fortress backdrop"
+    "keywords": [
+      "tightening",
+      "rate hike",
+      "Fed hawkishness"
+    ],
+    "image_prompt": "An iron-fisted emperor on a throne of stacked interest rate announcements, holding a scepter shaped like a rate hike chart, cold stone fortress backdrop",
+    "name_zh": "皇帝",
+    "macro_mapping_zh": "升息 / 貨幣緊縮"
   },
   {
     "id": 5,
     "name": "The Hierophant",
     "roman": "V",
     "macro_mapping": "OPEC+ discipline / Cartel orthodoxy",
-    "keywords": ["cartel", "quota", "production cut"],
-    "image_prompt": "A robed high priest presiding over an OPEC assembly table, blessing barrels of crude oil, ministers bowing in ornate Middle Eastern hall"
+    "keywords": [
+      "cartel",
+      "quota",
+      "production cut"
+    ],
+    "image_prompt": "A robed high priest presiding over an OPEC assembly table, blessing barrels of crude oil, ministers bowing in ornate Middle Eastern hall",
+    "name_zh": "教皇",
+    "macro_mapping_zh": "OPEC+ 紀律 / 卡特爾正統"
   },
   {
     "id": 6,
     "name": "The Lovers",
     "roman": "VI",
     "macro_mapping": "Trade agreement / Correlated markets",
-    "keywords": ["correlation", "trade deal", "convergence"],
-    "image_prompt": "Two commodity traders shaking hands beneath a glowing angel made of price-correlation matrices, gold and oil charts mirroring each other in background"
+    "keywords": [
+      "correlation",
+      "trade deal",
+      "convergence"
+    ],
+    "image_prompt": "Two commodity traders shaking hands beneath a glowing angel made of price-correlation matrices, gold and oil charts mirroring each other in background",
+    "name_zh": "戀人",
+    "macro_mapping_zh": "貿易協定 / 市場相關性走高"
   },
   {
     "id": 7,
     "name": "The Chariot",
     "roman": "VII",
     "macro_mapping": "Trend in motion / Momentum trade",
-    "keywords": ["trend", "momentum", "breakout confirmed"],
-    "image_prompt": "A triumphant trader riding a chariot pulled by a black bear and white bull in harness, speeding along an upward-sloping chart axis highway"
+    "keywords": [
+      "trend",
+      "momentum",
+      "breakout confirmed"
+    ],
+    "image_prompt": "A triumphant trader riding a chariot pulled by a black bear and white bull in harness, speeding along an upward-sloping chart axis highway",
+    "name_zh": "戰車",
+    "macro_mapping_zh": "趨勢延續 / 動能交易"
   },
   {
     "id": 8,
     "name": "Strength",
     "roman": "VIII",
     "macro_mapping": "Long-term structural demand / Patient capital",
-    "keywords": ["structural demand", "conviction", "long-term hold"],
-    "image_prompt": "A calm figure gently holding open the jaws of a lion made of crude oil futures contracts, strength through composure, long horizon sunrise behind"
+    "keywords": [
+      "structural demand",
+      "conviction",
+      "long-term hold"
+    ],
+    "image_prompt": "A calm figure gently holding open the jaws of a lion made of crude oil futures contracts, strength through composure, long horizon sunrise behind",
+    "name_zh": "力量",
+    "macro_mapping_zh": "長期結構性需求 / 耐心資本"
   },
   {
     "id": 9,
     "name": "The Hermit",
     "roman": "IX",
     "macro_mapping": "Deflation / Low-volatility contraction",
-    "keywords": ["deflation", "contraction", "deleveraging"],
-    "image_prompt": "A solitary figure at the peak of a mountain of deleveraged positions, lantern glowing dimly, price charts descending into mist below"
+    "keywords": [
+      "deflation",
+      "contraction",
+      "deleveraging"
+    ],
+    "image_prompt": "A solitary figure at the peak of a mountain of deleveraged positions, lantern glowing dimly, price charts descending into mist below",
+    "name_zh": "隱士",
+    "macro_mapping_zh": "通縮 / 低波動收縮"
   },
   {
     "id": 10,
     "name": "Wheel of Fortune",
     "roman": "X",
     "macro_mapping": "Supply shock / Cycle turn",
-    "keywords": ["supply shock", "cycle turn", "mean reversion"],
-    "image_prompt": "A great wheel of commodity charts spinning—oil, gold, corn, copper—creatures riding up and down its rim as markets rotate, fates written in candlesticks"
+    "keywords": [
+      "supply shock",
+      "cycle turn",
+      "mean reversion"
+    ],
+    "image_prompt": "A great wheel of commodity charts spinning—oil, gold, corn, copper—creatures riding up and down its rim as markets rotate, fates written in candlesticks",
+    "name_zh": "命運之輪",
+    "macro_mapping_zh": "供給衝擊 / 週期反轉"
   },
   {
     "id": 11,
     "name": "Justice",
     "roman": "XI",
     "macro_mapping": "Regulatory rebalancing / Market correction",
-    "keywords": ["regulation", "rebalancing", "correction"],
-    "image_prompt": "A blindfolded figure holding scales perfectly balanced with an oil barrel on one side and a gold bar on the other, courthouse of commodity regulators behind"
+    "keywords": [
+      "regulation",
+      "rebalancing",
+      "correction"
+    ],
+    "image_prompt": "A blindfolded figure holding scales perfectly balanced with an oil barrel on one side and a gold bar on the other, courthouse of commodity regulators behind",
+    "name_zh": "正義",
+    "macro_mapping_zh": "法規再平衡 / 市場修正"
   },
   {
     "id": 12,
     "name": "The Hanged Man",
     "roman": "XII",
     "macro_mapping": "Recession / Demand destruction",
-    "keywords": ["recession", "demand destruction", "waiting"],
-    "image_prompt": "A trader hanging upside down from a derrick scaffold, markets paused, oil barrels and grain sacks suspended mid-fall around them, eerie calm"
+    "keywords": [
+      "recession",
+      "demand destruction",
+      "waiting"
+    ],
+    "image_prompt": "A trader hanging upside down from a derrick scaffold, markets paused, oil barrels and grain sacks suspended mid-fall around them, eerie calm",
+    "name_zh": "倒吊人",
+    "macro_mapping_zh": "衰退 / 需求破壞"
   },
   {
     "id": 13,
     "name": "Death",
     "roman": "XIII",
     "macro_mapping": "Regime change / End of cycle",
-    "keywords": ["regime change", "transition", "end of cycle"],
-    "image_prompt": "A skeleton knight riding through a commodities trading floor at close of day, old regime charts crumbling, new green-energy sprouts emerging from ashes"
+    "keywords": [
+      "regime change",
+      "transition",
+      "end of cycle"
+    ],
+    "image_prompt": "A skeleton knight riding through a commodities trading floor at close of day, old regime charts crumbling, new green-energy sprouts emerging from ashes",
+    "name_zh": "死神",
+    "macro_mapping_zh": "政策易轍 / 週期終結"
   },
   {
     "id": 14,
     "name": "Temperance",
     "roman": "XIV",
     "macro_mapping": "Soft landing / Managed slowdown",
-    "keywords": ["soft landing", "balance", "moderation"],
-    "image_prompt": "An angelic figure pouring liquidity between two beakers—one labeled growth, one labeled inflation—standing on a riverbank of steady economic flow"
+    "keywords": [
+      "soft landing",
+      "balance",
+      "moderation"
+    ],
+    "image_prompt": "An angelic figure pouring liquidity between two beakers—one labeled growth, one labeled inflation—standing on a riverbank of steady economic flow",
+    "name_zh": "節制",
+    "macro_mapping_zh": "軟著陸 / 受控放緩"
   },
   {
     "id": 15,
     "name": "The Devil",
     "roman": "XV",
     "macro_mapping": "Leverage / Commodity addiction",
-    "keywords": ["leverage", "dependency", "overcapacity"],
-    "image_prompt": "A horned figure enthroned above two traders chained to desks piled with leveraged futures positions, oil and metal chains binding them, flickering trading screens"
+    "keywords": [
+      "leverage",
+      "dependency",
+      "overcapacity"
+    ],
+    "image_prompt": "A horned figure enthroned above two traders chained to desks piled with leveraged futures positions, oil and metal chains binding them, flickering trading screens",
+    "name_zh": "惡魔",
+    "macro_mapping_zh": "槓桿 / 商品成癮"
   },
   {
     "id": 16,
     "name": "The Tower",
     "roman": "XVI",
     "macro_mapping": "Volatility spike / Black swan",
-    "keywords": ["volatility", "black swan", "liquidation"],
-    "image_prompt": "A tower of stacked commodity exchange servers struck by lightning, traders leaping from windows as charts go vertical, chaos and price discovery in freefall"
+    "keywords": [
+      "volatility",
+      "black swan",
+      "liquidation"
+    ],
+    "image_prompt": "A tower of stacked commodity exchange servers struck by lightning, traders leaping from windows as charts go vertical, chaos and price discovery in freefall",
+    "name_zh": "高塔",
+    "macro_mapping_zh": "波動率飆升 / 黑天鵝"
   },
   {
     "id": 17,
     "name": "The Star",
     "roman": "XVII",
     "macro_mapping": "Recovery / Liquidity returns",
-    "keywords": ["recovery", "liquidity", "green shoots"],
-    "image_prompt": "A figure kneeling at a river of quantitative easing, pouring water onto barren commodity fields as stars—each a different market ticker—light up the night sky"
+    "keywords": [
+      "recovery",
+      "liquidity",
+      "green shoots"
+    ],
+    "image_prompt": "A figure kneeling at a river of quantitative easing, pouring water onto barren commodity fields as stars—each a different market ticker—light up the night sky",
+    "name_zh": "星星",
+    "macro_mapping_zh": "復甦 / 流動性回歸"
   },
   {
     "id": 18,
     "name": "The Moon",
     "roman": "XVIII",
     "macro_mapping": "Uncertainty / Sentiment-driven market",
-    "keywords": ["uncertainty", "sentiment", "false signals"],
-    "image_prompt": "A full moon reflected on an oil slick sea, two wolves howling at diverging price paths, a crayfish emerging from speculative froth below"
+    "keywords": [
+      "uncertainty",
+      "sentiment",
+      "false signals"
+    ],
+    "image_prompt": "A full moon reflected on an oil slick sea, two wolves howling at diverging price paths, a crayfish emerging from speculative froth below",
+    "name_zh": "月亮",
+    "macro_mapping_zh": "不確定性 / 情緒主導市場"
   },
   {
     "id": 19,
     "name": "The Sun",
     "roman": "XIX",
     "macro_mapping": "Global growth / Bull market",
-    "keywords": ["growth", "bull market", "risk appetite"],
-    "image_prompt": "A radiant sun with a smiling face shining over thriving commodity fields—golden wheat, gushing oil wells, gleaming copper mines—a child riding a white horse"
+    "keywords": [
+      "growth",
+      "bull market",
+      "risk appetite"
+    ],
+    "image_prompt": "A radiant sun with a smiling face shining over thriving commodity fields—golden wheat, gushing oil wells, gleaming copper mines—a child riding a white horse",
+    "name_zh": "太陽",
+    "macro_mapping_zh": "全球成長 / 多頭市場"
   },
   {
     "id": 20,
     "name": "Judgement",
     "roman": "XX",
     "macro_mapping": "Policy pivot / Fed reversal",
-    "keywords": ["pivot", "reversal", "Fed easing"],
-    "image_prompt": "An angel blowing a trumpet above traders rising from their desks, Jerome Powell descending from clouds with a rate-cut announcement, markets awakening below"
+    "keywords": [
+      "pivot",
+      "reversal",
+      "Fed easing"
+    ],
+    "image_prompt": "An angel blowing a trumpet above traders rising from their desks, Jerome Powell descending from clouds with a rate-cut announcement, markets awakening below",
+    "name_zh": "審判",
+    "macro_mapping_zh": "政策轉向 / Fed 翻轉"
   },
   {
     "id": 21,
     "name": "The World",
     "roman": "XXI",
     "macro_mapping": "Full cycle completion / Peak prosperity",
-    "keywords": ["cycle complete", "peak", "global integration"],
-    "image_prompt": "A dancer at the center of a laurel wreath encircling the globe, all commodity markets in harmony—oil, gold, grain, copper—prices balanced at perfect equilibrium"
+    "keywords": [
+      "cycle complete",
+      "peak",
+      "global integration"
+    ],
+    "image_prompt": "A dancer at the center of a laurel wreath encircling the globe, all commodity markets in harmony—oil, gold, grain, copper—prices balanced at perfect equilibrium",
+    "name_zh": "世界",
+    "macro_mapping_zh": "完整週期收尾 / 頂峰繁榮"
+  },
+  {
+    "id": 22,
+    "name": "Ace of Wands",
+    "rank": "Ace",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "New oil discovery / Exploration boom",
+    "keywords": [
+      "new supply",
+      "exploration",
+      "first mover"
+    ],
+    "image_prompt": "A flaming wand planted in an oil field, a gusher erupting skyward, dawn of a new energy frontier",
+    "name_zh": "權杖王牌",
+    "macro_mapping_zh": "新油田發現 / 勘探熱潮"
+  },
+  {
+    "id": 23,
+    "name": "Two of Wands",
+    "rank": "Two",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Energy strategy crossroads / Pipeline decision",
+    "keywords": [
+      "planning",
+      "route choice",
+      "infrastructure"
+    ],
+    "image_prompt": "A figure holding two wands overlooking diverging pipeline routes across a desert landscape",
+    "name_zh": "權杖二",
+    "macro_mapping_zh": "能源策略十字路口 / 管線決策"
+  },
+  {
+    "id": 24,
+    "name": "Three of Wands",
+    "rank": "Three",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "LNG expansion / Export growth",
+    "keywords": [
+      "export",
+      "expansion",
+      "global reach"
+    ],
+    "image_prompt": "Three wands planted on a cliff above a harbor of departing LNG tankers, distant markets glowing on the horizon",
+    "name_zh": "權杖三",
+    "macro_mapping_zh": "LNG 擴張 / 出口成長"
+  },
+  {
+    "id": 25,
+    "name": "Four of Wands",
+    "rank": "Four",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Refinery completion / Stable output",
+    "keywords": [
+      "milestone",
+      "stable output",
+      "celebration"
+    ],
+    "image_prompt": "Four wands forming an arch over a newly completed refinery, workers celebrating first production",
+    "name_zh": "權杖四",
+    "macro_mapping_zh": "煉油廠完工 / 產能穩定"
+  },
+  {
+    "id": 26,
+    "name": "Five of Wands",
+    "rank": "Five",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Price war / OPEC discord",
+    "keywords": [
+      "price war",
+      "competition",
+      "discord"
+    ],
+    "image_prompt": "Five traders clashing with wand-shaped oil rigs, chaotic bidding floor, barrels tumbling",
+    "name_zh": "權杖五",
+    "macro_mapping_zh": "價格戰 / OPEC 內訌"
+  },
+  {
+    "id": 27,
+    "name": "Six of Wands",
+    "rank": "Six",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Energy rally / Sector outperformance",
+    "keywords": [
+      "rally",
+      "outperformance",
+      "victory"
+    ],
+    "image_prompt": "A triumphant trader on horseback parading through an oil trading floor, wand held high, green tickers cascading",
+    "name_zh": "權杖六",
+    "macro_mapping_zh": "能源反彈 / 板塊跑贏大盤"
+  },
+  {
+    "id": 28,
+    "name": "Seven of Wands",
+    "rank": "Seven",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Defending margins / Holding position",
+    "keywords": [
+      "defense",
+      "margin squeeze",
+      "resistance"
+    ],
+    "image_prompt": "A lone driller atop a rig platform fending off six encroaching competitors below with a flaming wand",
+    "name_zh": "權杖七",
+    "macro_mapping_zh": "捍衛利潤空間 / 守住部位"
+  },
+  {
+    "id": 29,
+    "name": "Eight of Wands",
+    "rank": "Eight",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Rapid price move / News-driven spike",
+    "keywords": [
+      "velocity",
+      "news spike",
+      "catalyst"
+    ],
+    "image_prompt": "Eight flaming wands streaking across the sky like missiles over an oil field, pipeline news ticker scrolling urgently",
+    "name_zh": "權杖八",
+    "macro_mapping_zh": "快速價格移動 / 消息驅動飆升"
+  },
+  {
+    "id": 30,
+    "name": "Nine of Wands",
+    "rank": "Nine",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Strategic reserve drawdown / Last defense",
+    "keywords": [
+      "SPR release",
+      "reserve",
+      "exhaustion"
+    ],
+    "image_prompt": "A weary guard standing before nine wands protecting the last strategic petroleum reserve tanks, bandaged but resolute",
+    "name_zh": "權杖九",
+    "macro_mapping_zh": "戰略儲備動用 / 最後防線"
+  },
+  {
+    "id": 31,
+    "name": "Ten of Wands",
+    "rank": "Ten",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Overextended long / Carry cost burden",
+    "keywords": [
+      "overweight",
+      "carry cost",
+      "burnout"
+    ],
+    "image_prompt": "A trader struggling to carry ten flaming wands of oil futures contracts, hunched under the weight, contango city behind",
+    "name_zh": "權杖十",
+    "macro_mapping_zh": "多頭超延伸 / 持倉成本沉重"
+  },
+  {
+    "id": 32,
+    "name": "Page of Wands",
+    "rank": "Page",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Shale startup / Exploration report",
+    "keywords": [
+      "scouting",
+      "new entrant",
+      "pilot well"
+    ],
+    "image_prompt": "A young geologist holding a single wand, surveying a promising shale formation, seismic data maps unfurling",
+    "name_zh": "權杖侍從",
+    "macro_mapping_zh": "頁岩新創 / 勘探報告出爐"
+  },
+  {
+    "id": 33,
+    "name": "Knight of Wands",
+    "rank": "Knight",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Aggressive driller / Fast expansion",
+    "keywords": [
+      "aggression",
+      "rapid deployment",
+      "wildcatter"
+    ],
+    "image_prompt": "An armored knight charging on horseback across an oil field, wand raised, drill rigs deploying in formation behind",
+    "name_zh": "權杖騎士",
+    "macro_mapping_zh": "激進鑽探商 / 快速擴張"
+  },
+  {
+    "id": 34,
+    "name": "Queen of Wands",
+    "rank": "Queen",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Energy transition leader / Renewables integration",
+    "keywords": [
+      "transition",
+      "leadership",
+      "clean energy"
+    ],
+    "image_prompt": "A queen enthroned between solar panels and oil derricks, sunflower wand in hand, managing the energy mix",
+    "name_zh": "權杖皇后",
+    "macro_mapping_zh": "能源轉型領導者 / 再生能源整合"
+  },
+  {
+    "id": 35,
+    "name": "King of Wands",
+    "rank": "King",
+    "suit": "Wands",
+    "sector": "Energy",
+    "macro_mapping": "Petro-state sovereign / OPEC kingpin",
+    "keywords": [
+      "sovereign power",
+      "production control",
+      "energy dominance"
+    ],
+    "image_prompt": "A crowned king on a throne of stacked oil barrels, wand-scepter controlling pipeline valves, desert kingdom backdrop",
+    "name_zh": "權杖國王",
+    "macro_mapping_zh": "產油國主權 / OPEC 樞紐"
+  },
+  {
+    "id": 36,
+    "name": "Ace of Pentacles",
+    "rank": "Ace",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Gold breakout / Safe-haven bid",
+    "keywords": [
+      "safe haven",
+      "new high",
+      "store of value"
+    ],
+    "image_prompt": "A giant golden pentacle coin emerging from the earth, miners and investors gathering beneath, vault doors open",
+    "name_zh": "星幣王牌",
+    "macro_mapping_zh": "黃金突破 / 避險需求湧現"
+  },
+  {
+    "id": 37,
+    "name": "Two of Pentacles",
+    "rank": "Two",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Gold-silver ratio oscillation / Hedging balance",
+    "keywords": [
+      "ratio trade",
+      "rebalancing",
+      "hedge"
+    ],
+    "image_prompt": "A juggler balancing two pentacle coins—one gold, one silver—infinity loop connecting them, volatile sea behind",
+    "name_zh": "星幣二",
+    "macro_mapping_zh": "金銀比震盪 / 對沖平衡"
+  },
+  {
+    "id": 38,
+    "name": "Three of Pentacles",
+    "rank": "Three",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Mining joint venture / Copper project approval",
+    "keywords": [
+      "collaboration",
+      "project approval",
+      "capex"
+    ],
+    "image_prompt": "Three craftsmen building a copper smelter under a cathedral arch, blueprints and pentacle coins on the table",
+    "name_zh": "星幣三",
+    "macro_mapping_zh": "礦業合資 / 銅礦項目核准"
+  },
+  {
+    "id": 39,
+    "name": "Four of Pentacles",
+    "rank": "Four",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Central bank gold hoarding / Reserve accumulation",
+    "keywords": [
+      "hoarding",
+      "reserves",
+      "protectionism"
+    ],
+    "image_prompt": "A miser clutching four gold pentacle coins, seated atop a central bank vault, refusing to release reserves",
+    "name_zh": "星幣四",
+    "macro_mapping_zh": "央行囤金 / 儲備積累"
+  },
+  {
+    "id": 40,
+    "name": "Five of Pentacles",
+    "rank": "Five",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Mining bust / Metal price collapse",
+    "keywords": [
+      "bust",
+      "write-down",
+      "mine closure"
+    ],
+    "image_prompt": "Two impoverished miners walking past a shuttered gold mine, five pentacles glowing in the stained glass above, snow falling",
+    "name_zh": "星幣五",
+    "macro_mapping_zh": "礦業衰退 / 金屬價格崩盤"
+  },
+  {
+    "id": 41,
+    "name": "Six of Pentacles",
+    "rank": "Six",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Metal stockpile release / Strategic distribution",
+    "keywords": [
+      "stockpile release",
+      "redistribution",
+      "aid"
+    ],
+    "image_prompt": "A wealthy merchant weighing and distributing copper and lithium pentacles to smaller traders, scales in hand",
+    "name_zh": "星幣六",
+    "macro_mapping_zh": "金屬庫存釋放 / 戰略分配"
+  },
+  {
+    "id": 42,
+    "name": "Seven of Pentacles",
+    "rank": "Seven",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Long-term mine development / Patience pays",
+    "keywords": [
+      "gestation",
+      "long cycle",
+      "patience"
+    ],
+    "image_prompt": "A miner leaning on a shovel, watching seven pentacle plants slowly growing from the earth, copper veins glowing underground",
+    "name_zh": "星幣七",
+    "macro_mapping_zh": "長期礦山開發 / 耐心有回報"
+  },
+  {
+    "id": 43,
+    "name": "Eight of Pentacles",
+    "rank": "Eight",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Refining efficiency / Processing upgrade",
+    "keywords": [
+      "efficiency",
+      "refinement",
+      "grade improvement"
+    ],
+    "image_prompt": "An artisan meticulously crafting eight perfect pentacle coins from raw ore, refinery workbench, improving purity",
+    "name_zh": "星幣八",
+    "macro_mapping_zh": "冶煉效率 / 加工升級"
+  },
+  {
+    "id": 44,
+    "name": "Nine of Pentacles",
+    "rank": "Nine",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Precious metals wealth / Portfolio insurance",
+    "keywords": [
+      "wealth preservation",
+      "insurance",
+      "gold allocation"
+    ],
+    "image_prompt": "An elegant figure in a vineyard of gold vines, nine pentacles hanging ripe, a falcon perched—ultimate portfolio hedge",
+    "name_zh": "星幣九",
+    "macro_mapping_zh": "貴金屬財富 / 投資組合保險"
+  },
+  {
+    "id": 45,
+    "name": "Ten of Pentacles",
+    "rank": "Ten",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Generational metal wealth / Mining dynasty",
+    "keywords": [
+      "dynasty",
+      "legacy assets",
+      "generational wealth"
+    ],
+    "image_prompt": "A multi-generational mining family under an arch of ten pentacles, gold and copper assets flowing through the generations",
+    "name_zh": "星幣十",
+    "macro_mapping_zh": "跨世代金屬財富 / 礦業王朝"
+  },
+  {
+    "id": 46,
+    "name": "Page of Pentacles",
+    "rank": "Page",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Lithium prospect / New metal demand thesis",
+    "keywords": [
+      "new thesis",
+      "lithium",
+      "EV demand"
+    ],
+    "image_prompt": "A young analyst studying a glowing pentacle of lithium ore, EV battery charts on the desk, emerging opportunity",
+    "name_zh": "星幣侍從",
+    "macro_mapping_zh": "鋰礦前景 / 新金屬需求論點"
+  },
+  {
+    "id": 47,
+    "name": "Knight of Pentacles",
+    "rank": "Knight",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Steady accumulation / DCA into metals",
+    "keywords": [
+      "accumulation",
+      "discipline",
+      "steady buying"
+    ],
+    "image_prompt": "An armored knight on a heavy warhorse, methodically collecting pentacle coins from the ground, slow and deliberate",
+    "name_zh": "星幣騎士",
+    "macro_mapping_zh": "穩健積累 / 定期買入金屬"
+  },
+  {
+    "id": 48,
+    "name": "Queen of Pentacles",
+    "rank": "Queen",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Central bank gold buyer / Sovereign reserve manager",
+    "keywords": [
+      "sovereign buyer",
+      "reserve management",
+      "stability"
+    ],
+    "image_prompt": "A queen in a lush garden of gold bars and copper wires, pentacle in lap, nurturing metal reserves",
+    "name_zh": "星幣皇后",
+    "macro_mapping_zh": "央行購金者 / 主權儲備管理人"
+  },
+  {
+    "id": 49,
+    "name": "King of Pentacles",
+    "rank": "King",
+    "suit": "Pentacles",
+    "sector": "Metals",
+    "macro_mapping": "Mining magnate / Metal market maker",
+    "keywords": [
+      "market maker",
+      "concentration",
+      "pricing power"
+    ],
+    "image_prompt": "A king enthroned in a vault of gold, silver, and copper, pentacle scepter, controlling the global metals market",
+    "name_zh": "星幣國王",
+    "macro_mapping_zh": "礦業大亨 / 金屬市場莊家"
+  },
+  {
+    "id": 50,
+    "name": "Ace of Cups",
+    "rank": "Ace",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Harvest bounty / New crop season begins",
+    "keywords": [
+      "new crop",
+      "abundance",
+      "favorable weather"
+    ],
+    "image_prompt": "An overflowing chalice of coffee beans, cocoa pods, and sugar cane, dove descending, lush tropical rains",
+    "name_zh": "聖杯王牌",
+    "macro_mapping_zh": "豐收降臨 / 新產季開始"
+  },
+  {
+    "id": 51,
+    "name": "Two of Cups",
+    "rank": "Two",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Origin-buyer partnership / Fair trade deal",
+    "keywords": [
+      "partnership",
+      "fair trade",
+      "bilateral"
+    ],
+    "image_prompt": "Two figures toasting with cups of coffee, cocoa farmer and roaster sealing a deal, intertwined vines",
+    "name_zh": "聖杯二",
+    "macro_mapping_zh": "產地買家合作 / 公平貿易協議"
+  },
+  {
+    "id": 52,
+    "name": "Three of Cups",
+    "rank": "Three",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "EM consumption boom / Demand celebration",
+    "keywords": [
+      "EM demand",
+      "consumption",
+      "urbanization"
+    ],
+    "image_prompt": "Three figures raising cups overflowing with coffee and cocoa, emerging market cityscape growing behind them",
+    "name_zh": "聖杯三",
+    "macro_mapping_zh": "新興市場消費熱潮 / 需求慶典"
+  },
+  {
+    "id": 53,
+    "name": "Four of Cups",
+    "rank": "Four",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Demand fatigue / Consumer saturation",
+    "keywords": [
+      "fatigue",
+      "saturation",
+      "apathy"
+    ],
+    "image_prompt": "A bored trader ignoring three cups of cocoa while a fourth is offered from a cloud, stagnant soft commodity charts",
+    "name_zh": "聖杯四",
+    "macro_mapping_zh": "需求疲乏 / 消費者飽和"
+  },
+  {
+    "id": 54,
+    "name": "Five of Cups",
+    "rank": "Five",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Crop failure / Weather disaster",
+    "keywords": [
+      "crop loss",
+      "drought",
+      "frost damage"
+    ],
+    "image_prompt": "A farmer mourning three spilled cups of ruined coffee harvest, two cups still standing behind, scorched fields",
+    "name_zh": "聖杯五",
+    "macro_mapping_zh": "作物歉收 / 氣候災難"
+  },
+  {
+    "id": 55,
+    "name": "Six of Cups",
+    "rank": "Six",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Legacy plantation / Traditional supply chain",
+    "keywords": [
+      "tradition",
+      "origin premium",
+      "heritage"
+    ],
+    "image_prompt": "Children exchanging cups of flowers in a nostalgic colonial-era coffee plantation, old trade routes glowing",
+    "name_zh": "聖杯六",
+    "macro_mapping_zh": "傳統種植園 / 既有供應鏈"
+  },
+  {
+    "id": 56,
+    "name": "Seven of Cups",
+    "rank": "Seven",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Speculative frenzy / Too many soft bets",
+    "keywords": [
+      "speculation",
+      "illusion",
+      "scattered bets"
+    ],
+    "image_prompt": "Seven floating cups each containing a different soft commodity mirage—coffee castles, sugar clouds, cocoa dragons—choose wisely",
+    "name_zh": "聖杯七",
+    "macro_mapping_zh": "投機狂熱 / 軟商品過度押注"
+  },
+  {
+    "id": 57,
+    "name": "Eight of Cups",
+    "rank": "Eight",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Abandoning underperforming crops / Rotation out",
+    "keywords": [
+      "rotation",
+      "abandonment",
+      "moving on"
+    ],
+    "image_prompt": "A figure walking away from eight stacked cups of stale cocoa and sugar positions, moonlit path toward new opportunities",
+    "name_zh": "聖杯八",
+    "macro_mapping_zh": "放棄表現不佳作物 / 轉倉操作"
+  },
+  {
+    "id": 58,
+    "name": "Nine of Cups",
+    "rank": "Nine",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Premium harvest / Quality spread widens",
+    "keywords": [
+      "premium",
+      "quality",
+      "satisfaction"
+    ],
+    "image_prompt": "A satisfied merchant seated before nine golden cups of finest arabica and single-origin cocoa, arms crossed, peak prices",
+    "name_zh": "聖杯九",
+    "macro_mapping_zh": "頂級豐收 / 品質溢價擴大"
+  },
+  {
+    "id": 59,
+    "name": "Ten of Cups",
+    "rank": "Ten",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Sustainable supply chain / ESG premium",
+    "keywords": [
+      "sustainability",
+      "ESG",
+      "supply chain harmony"
+    ],
+    "image_prompt": "A rainbow of ten cups arching over a thriving fair-trade coffee and cocoa farm, happy community below",
+    "name_zh": "聖杯十",
+    "macro_mapping_zh": "永續供應鏈 / ESG 溢價"
+  },
+  {
+    "id": 60,
+    "name": "Page of Cups",
+    "rank": "Page",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Specialty coffee trend / Niche demand signal",
+    "keywords": [
+      "niche demand",
+      "specialty",
+      "trend signal"
+    ],
+    "image_prompt": "A young barista holding a cup from which a fish of new consumer trend data leaps, artisanal coffee shop",
+    "name_zh": "聖杯侍從",
+    "macro_mapping_zh": "精品咖啡趨勢 / 利基需求信號"
+  },
+  {
+    "id": 61,
+    "name": "Knight of Cups",
+    "rank": "Knight",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "EM buyer on the move / Import surge",
+    "keywords": [
+      "import surge",
+      "EM buying",
+      "forward cover"
+    ],
+    "image_prompt": "A knight on horseback crossing a river, cup held aloft, heading toward emerging market ports laden with soft commodities",
+    "name_zh": "聖杯騎士",
+    "macro_mapping_zh": "新興市場買家行動 / 進口激增"
+  },
+  {
+    "id": 62,
+    "name": "Queen of Cups",
+    "rank": "Queen",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Weather oracle / El Nino forecaster",
+    "keywords": [
+      "weather risk",
+      "El Nino",
+      "forecast"
+    ],
+    "image_prompt": "A queen gazing into a cup of swirling weather patterns, ENSO data, crop maps reflected in the water",
+    "name_zh": "聖杯皇后",
+    "macro_mapping_zh": "氣象預言家 / 聖嬰現象預測師"
+  },
+  {
+    "id": 63,
+    "name": "King of Cups",
+    "rank": "King",
+    "suit": "Cups",
+    "sector": "Softs",
+    "macro_mapping": "Soft commodity monopolist / Trading house chief",
+    "keywords": [
+      "trading house",
+      "market control",
+      "physical flow"
+    ],
+    "image_prompt": "A king on a throne amid ocean waves, cup scepter, commanding fleets of coffee and cocoa cargo ships",
+    "name_zh": "聖杯國王",
+    "macro_mapping_zh": "軟商品壟斷者 / 貿易公司掌門"
+  },
+  {
+    "id": 64,
+    "name": "Ace of Swords",
+    "rank": "Ace",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Food security mandate / Policy breakthrough",
+    "keywords": [
+      "food security",
+      "breakthrough",
+      "clarity"
+    ],
+    "image_prompt": "A gleaming sword thrust through a crown of wheat, clouds parting, decisive grain policy announcement",
+    "name_zh": "寶劍王牌",
+    "macro_mapping_zh": "糧食安全授權 / 政策突破"
+  },
+  {
+    "id": 65,
+    "name": "Two of Swords",
+    "rank": "Two",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Export ban stalemate / Grain corridor impasse",
+    "keywords": [
+      "stalemate",
+      "embargo",
+      "indecision"
+    ],
+    "image_prompt": "A blindfolded figure holding two crossed swords over a grain shipping channel, Black Sea blockade behind",
+    "name_zh": "寶劍二",
+    "macro_mapping_zh": "出口禁令僵局 / 糧食走廊受阻"
+  },
+  {
+    "id": 66,
+    "name": "Three of Swords",
+    "rank": "Three",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Crop disease outbreak / Grain price shock",
+    "keywords": [
+      "disease",
+      "price shock",
+      "heartbreak"
+    ],
+    "image_prompt": "Three swords piercing a heart made of wheat sheaves, rain falling on blighted cornfields, anguished farmers",
+    "name_zh": "寶劍三",
+    "macro_mapping_zh": "作物病害爆發 / 糧價震盪"
+  },
+  {
+    "id": 67,
+    "name": "Four of Swords",
+    "rank": "Four",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Planting pause / Inter-crop rest period",
+    "keywords": [
+      "dormancy",
+      "fallow",
+      "rest period"
+    ],
+    "image_prompt": "A farmer resting on a tomb-like grain silo, four swords mounted above, winter fallow fields, waiting for spring",
+    "name_zh": "寶劍四",
+    "macro_mapping_zh": "休耕暫停 / 季間休止"
+  },
+  {
+    "id": 68,
+    "name": "Five of Swords",
+    "rank": "Five",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Trade war escalation / Tariff retaliation",
+    "keywords": [
+      "trade war",
+      "tariff",
+      "retaliation"
+    ],
+    "image_prompt": "A victor gathering five swords from a grain trade battlefield, defeated trade partners walking away, burned soybean fields",
+    "name_zh": "寶劍五",
+    "macro_mapping_zh": "貿易戰升溫 / 關稅報復"
+  },
+  {
+    "id": 69,
+    "name": "Six of Swords",
+    "rank": "Six",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Supply chain rerouting / New trade corridor",
+    "keywords": [
+      "rerouting",
+      "transit",
+      "new corridor"
+    ],
+    "image_prompt": "A boat carrying six swords and grain sacks across calm waters, leaving turbulent ports behind, safer trade route ahead",
+    "name_zh": "寶劍六",
+    "macro_mapping_zh": "供應鏈重路由 / 新貿易通道"
+  },
+  {
+    "id": 70,
+    "name": "Seven of Swords",
+    "rank": "Seven",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Grain theft / Sanctions evasion",
+    "keywords": [
+      "evasion",
+      "smuggling",
+      "covert flow"
+    ],
+    "image_prompt": "A sneaky figure stealing five of seven swords from a grain warehouse camp, looking back cautiously, moonlit port",
+    "name_zh": "寶劍七",
+    "macro_mapping_zh": "糧食竊取 / 制裁規避"
+  },
+  {
+    "id": 71,
+    "name": "Eight of Swords",
+    "rank": "Eight",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Logistics bottleneck / Trapped inventory",
+    "keywords": [
+      "bottleneck",
+      "stuck cargo",
+      "port congestion"
+    ],
+    "image_prompt": "A blindfolded figure surrounded by eight swords stuck in muddy ground, grain ships visible but unreachable, river blockade",
+    "name_zh": "寶劍八",
+    "macro_mapping_zh": "物流瓶頸 / 庫存受困"
+  },
+  {
+    "id": 72,
+    "name": "Nine of Swords",
+    "rank": "Nine",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Famine fear / Food inflation anxiety",
+    "keywords": [
+      "famine risk",
+      "food inflation",
+      "anxiety"
+    ],
+    "image_prompt": "A figure sitting up in bed, nine swords on the wall, nightmares of empty granaries and soaring bread prices",
+    "name_zh": "寶劍九",
+    "macro_mapping_zh": "飢荒恐慌 / 糧食通膨焦慮"
+  },
+  {
+    "id": 73,
+    "name": "Ten of Swords",
+    "rank": "Ten",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Harvest wipeout / Total crop loss",
+    "keywords": [
+      "wipeout",
+      "total loss",
+      "capitulation"
+    ],
+    "image_prompt": "A figure face-down in a devastated wheat field, ten swords in their back, but dawn breaking on the horizon—new planting season",
+    "name_zh": "寶劍十",
+    "macro_mapping_zh": "收成全毀 / 作物全損"
+  },
+  {
+    "id": 74,
+    "name": "Page of Swords",
+    "rank": "Page",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "USDA report watch / Crop survey intel",
+    "keywords": [
+      "USDA report",
+      "survey data",
+      "intelligence"
+    ],
+    "image_prompt": "A young scout on a windy hilltop holding a sword aloft, scanning grain fields with crop survey data streaming",
+    "name_zh": "寶劍侍從",
+    "macro_mapping_zh": "USDA 報告觀察 / 作物調查情報"
+  },
+  {
+    "id": 75,
+    "name": "Knight of Swords",
+    "rank": "Knight",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Aggressive short seller / Bear raid on grains",
+    "keywords": [
+      "bear raid",
+      "aggressive short",
+      "momentum selling"
+    ],
+    "image_prompt": "An armored knight charging headlong into grain markets, sword drawn, sell orders flying, storm clouds gathering",
+    "name_zh": "寶劍騎士",
+    "macro_mapping_zh": "激進空頭 / 空軍突擊糧價"
+  },
+  {
+    "id": 76,
+    "name": "Queen of Swords",
+    "rank": "Queen",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Food policy czar / Agricultural regulator",
+    "keywords": [
+      "regulation",
+      "food policy",
+      "import quota"
+    ],
+    "image_prompt": "A stern queen on a throne of grain statistics, sword raised, cutting through agricultural policy red tape, clear sky",
+    "name_zh": "寶劍皇后",
+    "macro_mapping_zh": "糧食政策沙皇 / 農業監管官"
+  },
+  {
+    "id": 77,
+    "name": "King of Swords",
+    "rank": "King",
+    "suit": "Swords",
+    "sector": "Grains",
+    "macro_mapping": "Grain export hegemon / Breadbasket power",
+    "keywords": [
+      "hegemon",
+      "export dominance",
+      "food weapon"
+    ],
+    "image_prompt": "A king enthroned atop a mountain of wheat and corn, sword-scepter, commanding global grain flows, ships and trains departing",
+    "name_zh": "寶劍國王",
+    "macro_mapping_zh": "糧食出口霸主 / 糧倉強權"
   }
 ]
